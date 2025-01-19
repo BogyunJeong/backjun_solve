@@ -1,0 +1,4 @@
+{
+    "cph.language.python.Args": "py -3.9",
+    "git.ignoreLimitWarning": true
+}

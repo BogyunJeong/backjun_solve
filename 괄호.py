@@ -1,17 +1,23 @@
 N = int(input())
-vps = []
+
 for i in range(N):
-    X = input()
-    isvps = True
-    for j in X:
-        if j == ')':
-            if len(vps) == 0:
-                isvps = False
+    stack = []
+    P = input()
+    result = True
+    for j in P:
+        if j == '(':
+            stack.append(j)
+        elif j == ')':
+            if len(stack) > 0:
+                stack.pop()
             else:
-                vps.pop()
-        else:
-            vps.append('(')
-    if len(vps) == 0 and isvps :
+                result = False
+                break
+    
+    if len(stack) > 0:
+        result = False
+
+    if result:
         print('YES')
     else:
         print('NO')

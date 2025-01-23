@@ -15,3 +15,4 @@ else:
         elif N == 1 or N == 2:
             print(-1)
 
+

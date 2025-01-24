@@ -11,3 +11,6 @@ for i in range(2,X+1):
         d[i] = min(d[i], d[i//3] + 1)
 
 print(d[X])
+
+'''
+'''

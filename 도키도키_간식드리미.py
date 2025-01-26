@@ -1,7 +1,7 @@
 import sys
-N = sys.stdin.readline
-L = list(map(int,sys.stdin.readline.split()))
+N = int(sys.stdin.readline())
+L = list(map(int,sys.stdin.readline().split()))
 stack = []
-for i in range(N):
-    stack.append(L(i))
+for i in L:
+    stack.append(i)
     print(stack)

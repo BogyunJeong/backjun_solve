@@ -1,2 +1,2 @@
-N = int(input())
-arr = list(map(int,input().split()))
+a = 2.12345678
+print(f'{a:.2f}')

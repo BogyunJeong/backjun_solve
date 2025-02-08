@@ -5,7 +5,7 @@ S = sys.stdin.readline().strip()
 num = re.findall(r'\d+',S)
 opper = [x for x in S if not x.isdigit()]
 
-
+print(num,opper)
 i=0
 while '+' in opper:
     if opper[i] == '+':

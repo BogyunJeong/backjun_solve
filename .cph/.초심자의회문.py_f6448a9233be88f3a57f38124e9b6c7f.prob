@@ -1,0 +1,1 @@
+{"name":"Local: 초심자의회문","url":"c:\\Users\\ototk\\Desktop\\보균\\코딩테스트\\백준\\초심자의회문.py","tests":[{"id":1739288282994,"input":"3\nlevel     \nsamsung\neye ","output":"#1 1\n#2 0\n#3 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ototk\\Desktop\\보균\\코딩테스트\\백준\\초심자의회문.py","group":"local","local":true}

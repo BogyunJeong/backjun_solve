@@ -18,6 +18,15 @@ for test_case in range(1, T + 1):
     
     while r > 0:
         for i in range(2):
+            nc = c + dy[i]
+            if -1 < nc < 100 and arr[r][nc] == 1:
+                while -1 < nc < 100 and arr[r][nc] == 1:
+                    c = nc
+                    nc += dy[i]
+                break
+        r += dx[2]
+
+    print(f'#{test_case} {c}')    
             
 
 

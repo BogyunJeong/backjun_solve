@@ -1,35 +1,49 @@
 from collections import deque
 
-N,M = map(int,input().split())
-
+N =int(input())
 graph = []
 for i in range(N):
     graph.append(list(map(int,input())))
+
+num = 2 # 단지 넘버링
+
 
 dx = [-1,1,0,0]
 dy = [0,0,-1,1]
 
 def bfs(x,y):
+    count = 1
     queue = deque()
     queue.append((x,y))
 
     while queue:
         x,y = queue.popleft()
-        
+        graph[x][y] = num
         for i in range(4):
             nx = x + dx[i]
             ny = y + dy[i]
-
-            if nx < 0 or ny < 0 or nx >= N or ny >= M:
+        
+            if nx < 0 or ny < 0 or nx >= N or ny >= N:
                 continue
 
             if graph[nx][ny] == 0:
                 continue
 
             if graph[nx][ny] == 1:
-                graph[nx][ny] = graph[x][y] + 1
+                graph[nx][ny] = num
                 queue.append((nx,ny))
+                count += 1
+    return count
 
-    return graph[N-1][M-1]
+result = []
+for i in range(N):
+    for j in range(N):
+        if graph[i][j] == 1:
+            result.append(bfs(i,j))
+            num +=1
 
-print(bfs(0,0))
+print(len(result))
+result.sort()
+for i in result:
+    print(i)
+

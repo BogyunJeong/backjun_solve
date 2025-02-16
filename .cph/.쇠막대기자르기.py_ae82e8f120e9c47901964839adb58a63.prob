@@ -1,0 +1,1 @@
+{"name":"Local: 쇠막대기자르기","url":"c:\\Users\\ototk\\Desktop\\보균\\코딩테스트\\백준\\쇠막대기자르기.py","tests":[{"id":1739603888821,"input":"2\n()(((()())(())()))(())\n(((()(()()))(())()))(()())","output":"#1 17\n#2 24"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ototk\\Desktop\\보균\\코딩테스트\\백준\\쇠막대기자르기.py","group":"local","local":true}

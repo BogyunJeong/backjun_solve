@@ -13,7 +13,6 @@ for test_case in range(1,T+1):
                 i +=1
                 if arr[i] == '(' and arr[i+1] != ')': # 또 막대기가 나온다면 체크
                     op +=1
-
                 elif op != 0 and arr[i] == ')' and arr[i-1] != '(': # 다른 막대기 닫힘 
                     op -= 1
                 elif arr[i] == '(' and arr[i+1] == ')': # 레이저라면 개수 체크

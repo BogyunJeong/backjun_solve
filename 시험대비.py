@@ -54,3 +54,25 @@ for i in range(1<<n):
             print(arr[j],end = " ")
     print()
 print()
+
+def binaryserh(a,N,key): # a는 배열 N은 배열 길이 key는 찾는 값값
+    start = 0
+    end = N-1
+    while start <= end:
+        middle = (start + end) // 2
+        if a[middle] == key:
+            return middle
+        elif a[middle] > key:
+            end = middle - 1
+        else:
+            start = middle + 1
+    return -1
+
+
+def selectionsort(a,N):
+    for i in range(N-1):
+        min_idx = i
+        for j in range(i+1,N):
+            if a[min_idx] > a[j]:
+                min_idx = j
+        a[i],a[min_idx] = a[min_idx],a[i]

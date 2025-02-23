@@ -13,10 +13,10 @@ def permutation(idx):
         return
     
     for i in range(N):
-        if not used[i]:
-            perm[idx] = num[i]
-            used[i] = 1
-            permutation(idx + 1)
-            used[i] = 0
+        if not used[i]:  # 숫자가 사용되지 않았을 경우
+            perm[idx] = num[i]  # 현재 위치에 숫자 저장
+            used[i] = 1  # 숫자 사용 표시
+            permutation(idx + 1)  # 다음 인덱스로 재귀 호출
+            used[i] = 0  # 원래 상태로 되돌리기 (백트래킹)
 
 permutation(0)

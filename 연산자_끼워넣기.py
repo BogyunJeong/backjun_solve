@@ -1,4 +1,5 @@
 from math import inf
+
 N = int(input())
 arr = list(map(int,input().split()))
 operator = list(map(int,input().split()))

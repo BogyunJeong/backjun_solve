@@ -1,0 +1,1 @@
+{"name":"Local: 프린터_큐","url":"c:\\Users\\ototk\\Desktop\\보균\\코딩테스트\\백준\\Python\\프린터_큐.py","tests":[{"id":1762896166641,"input":"3\n1 0\n5\n4 2\n1 2 3 4\n6 0\n1 1 9 1 1 1","output":"1\n2\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ototk\\Desktop\\보균\\코딩테스트\\백준\\Python\\프린터_큐.py","group":"local","local":true}
